@@ -45,6 +45,19 @@ $('a.sf-nav-item').click(function() {
     $('#sf-nav').toggleClass('show');
 });
 
+$('#scroll-to-top').click(function() {
+    $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > $(window).height()) {
+        $('#scroll-to-top').addClass("show");
+    } else {
+        $('#scroll-to-top').removeClass("show");
+    };
+});
+
+
 $('#values-metaverse-carousel').flickity({
     cellAlign: 'left',
     contain: true,
