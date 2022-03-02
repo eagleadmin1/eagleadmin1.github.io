@@ -134,8 +134,8 @@ header a {
 .sf-first-screen-img {
   position: absolute;
   bottom: 0;
-  right: 12%;
-  z-index: 1;
+  right: 10%;
+  z-index: 5;
 }
 
 .sf-header .sf-container {
@@ -180,6 +180,7 @@ a.sf-nav-item.active {
   padding: 60px 160px 60px 80px;
   max-width: 680px;
   margin-top: 100px;
+  position: relative;
 }
 
 .sf-first-screen .desc div:first-of-type {
@@ -856,6 +857,7 @@ a.sf-nav-item.active {
     margin-bottom: -10px;
     width: 50%;
     left: 25%;
+    z-index: 5;
   }
   .sf-our-mission .sf-h2 {
     margin-bottom: 20px;
